@@ -24,6 +24,9 @@ h1, p{
 footer{
   background-color: #686868;
   height: 125px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 a{
