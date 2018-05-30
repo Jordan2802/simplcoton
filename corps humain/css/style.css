@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Arvo', serif;
+  font-weight:lighter;
+  width: 100%;
+  background-color: #EDEDED;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+h2{
+  margin-bottom: 25px;
+}
+
+.epaule{
+  width: 250px;
+  position: absolute;
+  left: 150px;
+}
+
+.corps{
+  display: flex;
+  justify-content: center;
+
+}
+
+.moncercle{
+  background:rgba(122,122,122, 0.7);
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  border:1px solid black;
+  position: absolute;
+  margin-top: 85px;
+  left: 480px;
+}
+#cercle{
+  width: 15%;
+  align-items: stretch;
+}
+ .moncercle:hover {
+  background:rgba(212, 47, 55, 0.7);
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  border:1px solid rgba(212, 47, 55, 0.7);
+  position: absolute;
+  margin-top: 85px;
+
+}
+
+div .epaule{
+  opacity: 0;
+}
+div .moncercle:hover .epaule{
+  opacity: 1;
+}
