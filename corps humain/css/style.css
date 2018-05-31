@@ -10,6 +10,10 @@ body{
   background-color: #EDEDED;
 }
 
+body  *{
+  border: 2px solid black;
+}
+
 h1{
   text-align: center;
   margin-bottom: 60px;
@@ -20,46 +24,218 @@ h2{
   margin-bottom: 25px;
 }
 
+img{
+margin-left: 480px;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*les textes cachés\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 .epaule{
   width: 250px;
-  position: absolute;
-  left: 150px;
+  position: relative;
+  top: 20px;
 }
 
-.corps{
-  display: flex;
-  justify-content: center;
+.poignet{
+  width: 250px;
+  position: relative;
+  left: -300px;
+  top: 20px;
+  }
 
-}
+.coude{
+  width: 250px;
+  position: relative;
+  left: 670px;
+  top: -478px;
+  }
 
+.hanche{
+  width: 250px;
+  position: relative;
+  left: 368px;
+  top: -478px;
+  }
+
+.genoux{
+  width: 250px;
+  position: relative;
+  left: 65px;
+  top: -478px;
+  }
+
+.pied{
+  width: 250px;
+  position: relative;
+  left: -235px;
+  top: -478px;
+  }
+
+/*les cercles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .moncercle{
   background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:40px;
-  height:40px;
-  border:1px solid black;
-  position: absolute;
+  width:50px;
+  height:50px;
+  border:1px solid rgba(122,122,122, 0.7);
+  position: relative;
   margin-top: 85px;
-  left: 480px;
+  left: -150px;
 }
-#cercle{
-  width: 15%;
-  align-items: stretch;
+
+.moncercle:hover {
+ background:rgba(212, 47, 55, 0.7);
+ border:1px solid rgba(212, 47, 55, 0.7);
 }
- .moncercle:hover {
-  background:rgba(212, 47, 55, 0.7);
+
+.moncercle2{
+  background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:40px;
-  height:40px;
-  border:1px solid rgba(212, 47, 55, 0.7);
-  position: absolute;
-  margin-top: 85px;
-
+  width:50px;
+  height:50px;
+  border:1px solid rgba(122,122,122, 0.7);
+  position: relative;
+  margin-top: 220px;
+  left: -450px;
 }
 
-div .epaule{
+.moncercle2:hover{
+  background:rgba(212, 47, 55, 0.7);
+  border:1px solid rgba(212, 47, 55, 0.7);
+}
+
+.moncercle3{
+  background:rgba(122,122,122, 0.7);
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  border:1px solid rgba(122,122,122, 0.7);
+  position: relative;
+  margin-top: 180px;
+  left: -645px;
+}
+
+.moncercle3:hover{
+  background:rgba(212, 47, 55, 0.7);
+  border:1px solid rgba(212, 47, 55, 0.7);
+}
+
+.moncercle4{
+  background:rgba(122,122,122, 0.7);
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  border:1px solid rgba(122,122,122, 0.7);
+  position: relative;
+  margin-top: -260px;
+  left: 310px;
+}
+
+.moncercle4:hover{
+  background:rgba(212, 47, 55, 0.7);
+  border:1px solid rgba(212, 47, 55, 0.7);
+}
+
+.moncercle5{
+  background:rgba(122,122,122, 0.7);
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  border:1px solid rgba(122,122,122, 0.7);
+  position: relative;
+  margin-top: -185px;
+  left: -50px;
+}
+
+.moncercle5:hover{
+  background:rgba(212, 47, 55, 0.7);
+  border:1px solid rgba(212, 47, 55, 0.7);
+}
+
+.moncercle6{
+  background:rgba(122,122,122, 0.7);
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  border:1px solid rgba(122,122,122, 0.7);
+  position: relative;
+  margin-top: -70px;
+  left: -310px;
+}
+
+.moncercle6:hover{
+  background:rgba(212, 47, 55, 0.7);
+  border:1px solid rgba(212, 47, 55, 0.7);
+}
+/*.cerclevide{
+  background:rgba(122,122,122, 0);
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  border:1px solid rgba(122,122,122, 0);
+  position: relative;
+  margin-top: 440px;
+  left: 600px;
+}
+
+.cerclevide:hover{
+  background:rgba(212, 47, 55, 0);
+  border:1px solid rgba(212, 47, 55, 0);
+}*/
+/*les textes visibles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.epaule{
   opacity: 0;
 }
-div .moncercle:hover .epaule{
+.moncercle:hover + .epaule{
   opacity: 1;
 }
+
+.poignet{
+  opacity: 0;
+}
+.moncercle2:hover + .poignet{
+  opacity: 1;
+}
+
+.coude{
+  opacity: 0;
+}
+.moncercle3:hover + .coude{
+  opacity: 1;
+}
+
+.hanche{
+  opacity: 0;
+}
+.moncercle4:hover + .hanche{
+  opacity: 1;
+}
+
+.genoux{
+  opacity: 0;
+}
+.moncercle5:hover + .genoux{
+  opacity: 1;
+}
+
+.pied{
+  opacity: 0;
+}
+.moncercle6:hover + .pied{
+  opacity: 1;
+}
+
+/*.vide{
+  opacity: 0;
+}
+.cerclevide:hover + .vide{
+  opacity: 0;
+}*/
