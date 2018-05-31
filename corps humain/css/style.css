@@ -20,13 +20,11 @@ h2{
   margin-bottom: 25px;
 }
 
-img{
-margin-left:34%;
-}
 
 .container{
   width: 100%;
   display: flex;
+  justify-content: center;
   position: absolute;
 }
 
