@@ -10,10 +10,6 @@ body{
   background-color: #EDEDED;
 }
 
-body  *{
-  border: 2px solid black;
-}
-
 h1{
   text-align: center;
   margin-bottom: 60px;
@@ -29,10 +25,8 @@ margin-left: 480px;
 }
 
 .container{
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  position: absolute;
 }
 
 
@@ -41,50 +35,51 @@ margin-left: 480px;
 .epaule{
   width: 250px;
   position: relative;
-  top: 20px;
+  top: -50px;
+  left: 180px;
 }
 
 .poignet{
   width: 250px;
   position: relative;
-  left: -300px;
-  top: 20px;
+  left: 177px;
+  top: -185px;
   }
 
 .coude{
   width: 250px;
   position: relative;
-  left: 670px;
-  top: -478px;
+  left: 65px;
+  top: -145px;
   }
 
 .hanche{
   width: 250px;
   position: relative;
-  left: 368px;
-  top: -478px;
+  left: 90px;
+  top: -195px;
   }
 
 .genoux{
   width: 250px;
   position: relative;
-  left: 65px;
-  top: -478px;
+  left: 135px;
+  top: -285px;
   }
 
 .pied{
   width: 250px;
   position: relative;
-  left: -235px;
-  top: -478px;
+  left: 100px;
+  top: -395px;
   }
 
 /*les cercles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .moncercle{
   background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:50px;
-  height:50px;
+  width:45px;
+  height:45px;
   border:1px solid rgba(122,122,122, 0.7);
   position: relative;
   margin-top: 85px;
@@ -99,12 +94,12 @@ margin-left: 480px;
 .moncercle2{
   background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:50px;
-  height:50px;
+  width:45px;
+  height:45px;
   border:1px solid rgba(122,122,122, 0.7);
   position: relative;
   margin-top: 220px;
-  left: -450px;
+  left: -200px;
 }
 
 .moncercle2:hover{
@@ -115,12 +110,12 @@ margin-left: 480px;
 .moncercle3{
   background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:50px;
-  height:50px;
+  width:45px;
+  height:45px;
   border:1px solid rgba(122,122,122, 0.7);
   position: relative;
   margin-top: 180px;
-  left: -645px;
+  left: -130px;
 }
 
 .moncercle3:hover{
@@ -131,12 +126,12 @@ margin-left: 480px;
 .moncercle4{
   background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:50px;
-  height:50px;
+  width:45px;
+  height:45px;
   border:1px solid rgba(122,122,122, 0.7);
   position: relative;
-  margin-top: -260px;
-  left: 310px;
+  margin-top: 230px;
+  left: -200px;
 }
 
 .moncercle4:hover{
@@ -147,12 +142,12 @@ margin-left: 480px;
 .moncercle5{
   background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:50px;
-  height:50px;
+  width:45px;
+  height:45px;
   border:1px solid rgba(122,122,122, 0.7);
   position: relative;
-  margin-top: -185px;
-  left: -50px;
+  margin-top: 320px;
+  left: -300px;
 }
 
 .moncercle5:hover{
@@ -163,11 +158,11 @@ margin-left: 480px;
 .moncercle6{
   background:rgba(122,122,122, 0.7);
   border-radius:50%;
-  width:50px;
-  height:50px;
+  width:45px;
+  height:45px;
   border:1px solid rgba(122,122,122, 0.7);
   position: relative;
-  margin-top: -70px;
+  margin-top: 430px;
   left: -310px;
 }
 
@@ -192,50 +187,43 @@ margin-left: 480px;
 }*/
 /*les textes visibles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .epaule{
-  opacity: 0;
+  display: none;
 }
-.moncercle:hover + .epaule{
-  opacity: 1;
+.moncercle:hover .epaule{
+  display: block;
 }
 
 .poignet{
-  opacity: 0;
+  display: none;
 }
-.moncercle2:hover + .poignet{
-  opacity: 1;
+.moncercle2:hover .poignet{
+  display: block;
 }
 
 .coude{
-  opacity: 0;
+  display: none;
 }
-.moncercle3:hover + .coude{
-  opacity: 1;
+.moncercle3:hover .coude{
+  display: block;
 }
 
 .hanche{
-  opacity: 0;
+  display: none;
 }
-.moncercle4:hover + .hanche{
-  opacity: 1;
+.moncercle4:hover .hanche{
+  display: block;
 }
 
 .genoux{
-  opacity: 0;
+  display: none;
 }
-.moncercle5:hover + .genoux{
-  opacity: 1;
+.moncercle5:hover .genoux{
+  display: block;
 }
 
 .pied{
-  opacity: 0;
+  display: none;
 }
-.moncercle6:hover + .pied{
-  opacity: 1;
+.moncercle6:hover .pied{
+  display: block;
 }
-
-/*.vide{
-  opacity: 0;
-}
-.cerclevide:hover + .vide{
-  opacity: 0;
-}*/
