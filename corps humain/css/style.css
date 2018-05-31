@@ -21,10 +21,11 @@ h2{
 }
 
 img{
-margin-left: 480px;
+margin-left:34%;
 }
 
 .container{
+  width: 100%;
   display: flex;
   position: absolute;
 }
@@ -186,44 +187,9 @@ margin-left: 480px;
   border:1px solid rgba(212, 47, 55, 0);
 }*/
 /*les textes visibles\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-.epaule{
+.epaule, .poignet, .coude, .hanche, .genoux, .pied{
   display: none;
 }
-.moncercle:hover .epaule{
-  display: block;
-}
-
-.poignet{
-  display: none;
-}
-.moncercle2:hover .poignet{
-  display: block;
-}
-
-.coude{
-  display: none;
-}
-.moncercle3:hover .coude{
-  display: block;
-}
-
-.hanche{
-  display: none;
-}
-.moncercle4:hover .hanche{
-  display: block;
-}
-
-.genoux{
-  display: none;
-}
-.moncercle5:hover .genoux{
-  display: block;
-}
-
-.pied{
-  display: none;
-}
-.moncercle6:hover .pied{
+.moncercle:hover .epaule, .moncercle2:hover .poignet, .moncercle3:hover .coude, .moncercle4:hover .hanche, .moncercle5:hover .genoux, .moncercle6:hover .pied{
   display: block;
 }
