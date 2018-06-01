@@ -9,10 +9,19 @@ body{
   height: 100%;
   font-family: 'Trebuchet MS', sans-serif;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /*Header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 header{
   width: 100%;
-  background-color:  #a0e872 ;
+  background-image: url(../img/fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
   text-align: center;
 }
 h1{
@@ -33,16 +42,14 @@ nav p{
   padding-right: 5px;
   font-size: 2.2rem;
 }
-a{
-text-decoration: none;
-color: blue;
+nav p{
+  color: blue;
 }
-a:hover{
-  color: white;
-}
+
 nav p:hover{
   background-color:  #2d96f3;
   box-shadow: 2px 3px 10px  #2d51f3 inset;
+  color: white;
 }
 nav p:nth-child(1){
   border-left: 2px solid white;
@@ -68,7 +75,7 @@ nav p:nth-child(3){
 /*Container\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 h2{
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 3.6rem;
 }
 h3{
@@ -80,6 +87,7 @@ h3{
 }
 .container p{
   font-size: 1.6rem;
+  margin-bottom: 40px;
 }
 .st1{
   width: 980px;
@@ -88,6 +96,7 @@ h3{
 .st2 h2, .st2 p{
   width: 980px;
   margin:auto;
+  margin-bottom: 20px;
 }
 .st3{
   width: 980px;
@@ -103,7 +112,7 @@ iframe{
 }
 
 .img{
-  margin-right: 12px;
+  margin-right: 10px;
 }
 .imgform{
   display: inline-flex;
@@ -112,19 +121,30 @@ form{
   display: flex;
   flex-direction: column;
   width: 450px;
-  height: 380px;
+  height: 430px;
+  margin-left: 50px;
+}
+.profil{
+  max-width: 450px;
+  max-height: 380px;
 }
 .button{
   height: 55px;
-  width: 100px;
+  width: 160px;
   margin: auto;
 }
 input{
-  height: 30px;
+  height: 55px;
   margin-bottom: 15px;
 }
 textarea{
   margin-bottom: 15px;
+  height: 165px;
+}
+.fa-square-full{
+  color:  #b8b9bd;
+  width: 50px;
+  height: 50px;
 }
 /*Footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 footer{
@@ -135,7 +155,8 @@ footer{
 }
 span{
   color: white;
-  font-size: 4rem;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: 4.5rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 50px;
 }
