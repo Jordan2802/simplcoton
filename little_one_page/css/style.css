@@ -10,11 +10,6 @@ body{
   font-family: 'Trebuchet MS', sans-serif;
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
 /*Header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 header{
   width: 100%;
@@ -27,29 +22,68 @@ header{
 h1{
   font-size: 6rem;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+nav p:first-child a{
+  border-radius: 3px 0 0 3px;
+}
+nav p:last-child a{
+  border-radius: 0 3px 3px 0;
+}
 nav{
-  background-color:  #f37e2d;
+  background: linear-gradient(deepskyblue, dodgerblue);
   height: 60px;
   width: 100%;
   display: inline-flex;
   justify-content: center;
+  border-radius: 3px;
+  padding: 0 0 10px 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
+                0 -1px 0 hsl(210, 100%, 32%) inset,
+                0 -2px 0 hsl(210, 100%, 38%) inset,
+                0 -3px 0 hsl(210, 100%, 44%) inset,
+                0 -4px 0 hsl(210, 100%, 50%) inset,
+                0 -5px 0 hsl(210, 100%, 60%) inset;
 }
 nav p{
   height: 40px;
   padding-top: 20px;
+  display: block;
   text-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 8px 8px 17px 8px;
   font-size: 2.2rem;
-}
-nav p{
-  color: blue;
+  color: rgba(0, 0, 0, .7);
+  transition: all .3s .1s;
+  position: relative;
 }
 
+nav p::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+}
+nav p:hover::before{
+    background: white;
+    box-shadow: 0 0 2px white,
+                0 -1px 0 rgba(0, 0, 0, .4);
+}
 nav p:hover{
   background-color:  #2d96f3;
   box-shadow: 2px 3px 10px  #2d51f3 inset;
   color: white;
+  padding: 8px 40px 17px 40px;
+  transition: all .3s 0s;
 }
 nav p:nth-child(1){
   border-left: 2px solid white;
@@ -72,6 +106,7 @@ nav p:nth-child(3){
 .titre p{
   font-size: 3.6rem;
 }
+
 /*Container\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 h2{
   margin-top: 10px;
@@ -132,6 +167,11 @@ form{
   height: 55px;
   width: 160px;
   margin: auto;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #9ad2f2;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bolder;
 }
 input{
   height: 55px;
@@ -146,12 +186,16 @@ textarea{
   width: 50px;
   height: 50px;
 }
+h2 .fa-square-full{
+  vertical-align:sub;
+}
 /*Footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 footer{
   width: 100%;
   height: 150px;
   background-color: #2d96f3;
   text-align: center;
+  margin-top: 80px;
 }
 span{
   color: white;
