@@ -24,11 +24,14 @@ header{
   height: 360px;
   text-align: center;
 }
-h1{
+/*animation h1////////////////////////////////////////////////////////////*/
+.ml3 {
+  font-weight: 900;
   font-size: 6rem;
-  color: white;
+  margin-bottom: 20px;
 }
 
+/*//////////////////////////////////////////////////////////////////////////*/
 .titre{
   height: 200px;
   padding-top:100px;
@@ -72,6 +75,10 @@ nav p:nth-child(2){
   border-right: 1px solid white;
 }
 nav p:nth-child(3){
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+nav p:nth-child(4){
   text-align: center;
   border-left: 1px solid white;
   border-right: 2px solid white;
@@ -114,25 +121,6 @@ nav p:hover::before{
                 0 -1px 0 rgba(0, 0, 0, .4);
 }
 
-/*stick header///////////////////////////////////////////////////////////////*/
-
-.nav-is-stuck .main-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-	animation: stickAnim .3s;
-}
-
-@keyframes stickAnim {
-	0% {
-		transform: translateY(-86px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
 /*Container\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////////////////////////////////////////////////////////////*/
 h2{
@@ -145,7 +133,7 @@ h3{
   font-weight: bolder;
 }
 
-.fa-image, .fa-portrait, .fa-clipboard{
+.fa-image, .fa-portrait, .fa-clipboard, .fa-fast-forward{
   color:  black;
   width: 50px;
   height: 50px;
@@ -160,7 +148,7 @@ h3{
   font-size: 1.6rem;
   margin-bottom: 40px;
 }
-.st1, .st3{
+.st1, .st3, .st4{
   width: 980px;
   margin: auto;
 }
@@ -359,7 +347,7 @@ span{
   margin-top: 50px;
 }
 
-nav.fixed{
+/*nav.fixed{
   position: fixed;
   top: 0;
   left: 50px;
@@ -367,5 +355,14 @@ nav.fixed{
   width: 10%;
   height: 140px;
   flex-direction: column;
+  z-index:1000;
+}*/
+nav.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.7;
   z-index:1000;
 }
