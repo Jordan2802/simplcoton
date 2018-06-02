@@ -140,7 +140,7 @@ box-shadow: 10px 10px 35px grey;
   font-size: 1.6rem;
   margin-bottom: 40px;
 }
-.st1{
+.st1, .st3{
   width: 980px;
   margin: auto;
 }
@@ -149,10 +149,7 @@ box-shadow: 10px 10px 35px grey;
   margin:auto;
   margin-bottom: 20px;
 }
-.st3{
-  width: 980px;
-  margin:auto;
-}
+
 iframe{
   width:100%;
   margin-top: 20px;
@@ -177,7 +174,8 @@ form{
   margin-left: 50px;
 }
 .profil{
-  width: 450px;
+  position: relative;
+  width: 480px;
   height: 380px;
 }
 .button{
@@ -256,7 +254,7 @@ h2 .fa-id-card{
 .icone4{
   border: 1px solid #a8a8a8;
   width: 450px;
-  height: 180px;
+  height: 140px;
   color: #a8a8a8;
   margin-top: 5px;
 }
@@ -265,10 +263,11 @@ h2 .fa-id-card{
   border:0;
   width: 405px;
   margin-top: 5px;
-  outline: none;
+  height: 130px;
+/*  outline: none;*/
 }
 .fa-comment{
-  top: -155px;
+  top: -135px;
   position: relative;
 }
 .fa-user,.fa-envelope,.fa-mobile-alt,.fa-comment{
