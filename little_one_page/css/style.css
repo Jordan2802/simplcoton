@@ -114,6 +114,25 @@ nav p:hover::before{
                 0 -1px 0 rgba(0, 0, 0, .4);
 }
 
+/*stick header///////////////////////////////////////////////////////////////*/
+
+.nav-is-stuck .main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	animation: stickAnim .3s;
+}
+
+@keyframes stickAnim {
+	0% {
+		transform: translateY(-86px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 /*Container\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ///////////////////////////////////////////////////////////////////////////////*/
 h2{
@@ -338,4 +357,15 @@ span{
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 50px;
+}
+
+nav.fixed{
+  position: fixed;
+  top: 0;
+  left: 50px;
+  right: 0;
+  width: 10%;
+  height: 140px;
+  flex-direction: column;
+  z-index:1000;
 }
