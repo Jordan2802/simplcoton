@@ -8,6 +8,10 @@ html{
 body{
   height: 100%;
   font-family: 'Trebuchet MS', sans-serif;
+  background-image: url(../img/fondopa.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
 }
 
 /*Header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -16,6 +20,7 @@ header{
   background-image: url(../img/fond.jpg);
   background-repeat: no-repeat;
   background-size:cover;
+  background-attachment: fixed;
   height: 360px;
   text-align: center;
 }
@@ -24,10 +29,17 @@ h1{
   color: white;
 }
 
+.titre{
+  height: 200px;
+  padding-top:100px;
+}
+.titre p{
+  font-size: 3.6rem;
+  color: white;
+}
 a{
   text-decoration: none;
   color: inherit;
-
 }
 nav p:first-child a{
   border-radius: 3px 0 0 3px;
@@ -51,6 +63,20 @@ nav{
                 0 -4px 0 hsl(210, 100%, 50%) inset,
                 0 -5px 0 hsl(210, 100%, 60%) inset;
 }
+nav p:nth-child(1){
+  border-left: 2px solid white;
+  border-right: 1px solid white;
+}
+nav p:nth-child(2){
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+nav p:nth-child(3){
+  text-align: center;
+  border-left: 1px solid white;
+  border-right: 2px solid white;
+}
+/*animation padding///////////////////////////////////////////////////////////*/
 nav p{
   height: 40px;
   padding-top: 20px;
@@ -63,6 +89,14 @@ nav p{
   position: relative;
 }
 
+nav p:hover{
+  background-color:  #2d96f3;
+  box-shadow: 2px 3px 10px  #2d51f3 inset;
+  color: white;
+  padding: 8px 40px 17px 40px;
+  transition: all .3s 0s;
+}
+/*rond lumineux///////////////////////////////////////////////////////////////*/
 nav p::before{
     content: '';
     position: absolute;
@@ -79,37 +113,9 @@ nav p:hover::before{
     box-shadow: 0 0 2px white,
                 0 -1px 0 rgba(0, 0, 0, .4);
 }
-nav p:hover{
-  background-color:  #2d96f3;
-  box-shadow: 2px 3px 10px  #2d51f3 inset;
-  color: white;
-  padding: 8px 40px 17px 40px;
-  transition: all .3s 0s;
-}
-nav p:nth-child(1){
-  border-left: 2px solid white;
-  border-right: 1px solid white;
-}
-nav p:nth-child(2){
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-}
-nav p:nth-child(3){
-  text-align: center;
-  border-left: 1px solid white;
-  border-right: 2px solid white;
-}
 
-.titre{
-  height: 200px;
-  padding-top:100px;
-}
-.titre p{
-  font-size: 3.6rem;
-  color: white;
-}
-
-/*Container\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*Container\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////////////////////////////////////////////////////////////*/
 h2{
   margin-top: 10px;
   margin-bottom: 40px;
@@ -120,17 +126,14 @@ h3{
   font-weight: bolder;
 }
 
-.image img {
-	position: relative;
-	top: 0;
-  box-shadow: 6px 6px 6px black;
-	transition: all 0.3s ease-in;
+.fa-id-card{
+  color:  #9ad2f2;
+  width: 50px;
+  height: 50px;
+  margin-left: 0;
 }
-
-.image img:hover {
-top: -35px;
-border-radius: 50%;
-box-shadow: 10px 10px 35px grey;
+h2 .fa-id-card{
+  vertical-align:sub;
 }
 
 .container{
@@ -149,11 +152,20 @@ box-shadow: 10px 10px 35px grey;
   margin:auto;
   margin-bottom: 20px;
 }
-
-iframe{
-  width:100%;
-  margin-top: 20px;
+/*partie 1////////////////////////////////////////////////////////////////////*/
+.image img {
+	position: relative;
+	top: 0;
+  box-shadow: 6px 6px 6px black;
+	transition: all 0.3s ease-in;
 }
+
+.image img:hover {
+top: -35px;
+border-radius: 50%;
+box-shadow: 10px 10px 35px grey;
+}
+
 .image{
   display: flex;
   justify-content:flex-start;
@@ -163,9 +175,18 @@ iframe{
 .img{
   margin-right: 10px;
 }
+/*partie 2///////////////////////////////////////////////////////////////////*/
+iframe{
+  width:100%;
+  margin-top: 20px;
+}
+
+/*partie 3///////////////////////////////////////////////////////////////////*/
+
 .imgform{
   display: inline-flex;
 }
+
 form{
   display: flex;
   flex-direction: column;
@@ -173,11 +194,23 @@ form{
   height: 500px;
   margin-left: 50px;
 }
-.profil{
-  position: relative;
-  width: 480px;
-  height: 380px;
+input::placeholder, textarea::placeholder{
+  color: rgba(0,0,0,0.8);
+  font-size: 1.6rem;
+  font-weight: bold;
 }
+input{
+  height: 55px;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+textarea{
+  margin-bottom: 15px;
+  height: 165px;
+  font-size: 1.6rem;
+}
+
 .button{
   height: 55px;
   width: 160px;
@@ -189,74 +222,37 @@ form{
   font-weight: bolder;
   outline: none;
 }
-input{
-  height: 55px;
-  margin-bottom: 15px;
-}
-textarea{
-  margin-bottom: 15px;
-  height: 165px;
-}
-.fa-id-card{
-  color:  #9ad2f2;
-  width: 50px;
-  height: 50px;
-  margin-left: 0;
-}
-h2 .fa-id-card{
-  vertical-align:sub;
-}
 
 .icone1{
-  border: 1px solid #a8a8a8;
+  border: 1px solid #242323;
   width: 450px;
   height: 55px;
-  color: #a8a8a8;
+  color: #242323;
   margin-bottom: 5px;
 }
 
-.text{
-  border:0;
-  width: 405px;
-  outline: none;
-}
-
-.icone2{
-  border: 1px solid #a8a8a8;
+.icone2,.icone3{
+  border: 1px solid #242323;
   width: 450px;
   height: 55px;
-  color: #a8a8a8;
+  color: #242323;
   margin-bottom: 5px;
   margin-top: 5px;
-}
-
-.mail{
-  border:0;
-  width: 405px;
-  outline: none;
-}
-
-.icone3{
-  border: 1px solid #a8a8a8;
-  width: 450px;
-  height: 55px;
-  color: #a8a8a8;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.tel{
-  border:0;
-  width: 405px;
-  outline: none;
 }
 
 .icone4{
-  border: 1px solid #a8a8a8;
+  border: 1px solid #242323;
   width: 450px;
   height: 140px;
-  color: #a8a8a8;
+  color: #242323;
   margin-top: 5px;
+}
+
+.text,.mail,.tel{
+  border:0;
+  width: 405px;
+  outline: none;
+  background-color: inherit;
 }
 
 .area{
@@ -264,18 +260,22 @@ h2 .fa-id-card{
   width: 405px;
   margin-top: 5px;
   height: 130px;
-/*  outline: none;*/
+  background-color: inherit;
+  outline: none;
 }
 .fa-comment{
   top: -135px;
   position: relative;
 }
-.fa-user,.fa-envelope,.fa-mobile-alt,.fa-comment{
+.fa-user,.fa-envelope,.fa-comment{
   padding: 10px;
   font-size: 15px;
 }
-
-
+.fa-mobile-alt{
+  padding: 15px;
+  font-size: 15px;
+}
+/*images animés\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 #cf2 {
   position:relative;
   height:281px;
@@ -295,7 +295,7 @@ h2 .fa-id-card{
 opacity:0;
 }
 
-@keyframes cf3FadeInOut {
+@keyframes chgt_image{
 0% {
 opacity:1;
 }
@@ -311,7 +311,7 @@ opacity:0;
 }
 
 #cf2 img.top {
-animation-name: cf3FadeInOut;
+animation-name: chgt_image;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
 animation-duration: 6s;
