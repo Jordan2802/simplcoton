@@ -119,6 +119,20 @@ h3{
   font-size: 1.8rem;
   font-weight: bolder;
 }
+
+img {
+	position: relative;
+	top: 0;
+  box-shadow: 6px 6px 6px black;
+	transition: all 0.3s ease-in;
+}
+
+img:hover {
+top: -35px;
+border-radius: 50%;
+box-shadow: 10px 10px 35px grey;
+}
+
 .container{
   margin: auto;
 }
@@ -175,6 +189,7 @@ form{
   color: white;
   font-size: 1.6rem;
   font-weight: bolder;
+  outline: none;
 }
 input{
   height: 55px;
@@ -184,15 +199,16 @@ textarea{
   margin-bottom: 15px;
   height: 165px;
 }
-.fa-square-full{
-  color:  #b8b9bd;
+.fa-id-card{
+  color:  #9ad2f2;
   width: 50px;
   height: 50px;
   margin-left: 0;
 }
-h2 .fa-square-full{
+h2 .fa-id-card{
   vertical-align:sub;
 }
+
 /*Footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 footer{
   width: 100%;

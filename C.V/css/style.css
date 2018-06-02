@@ -114,12 +114,11 @@ nav ul{
 	transition: all 0.3s ease-in;
 }
 
-.me:hover, .me:focus {
+.me:hover {
 top: -10px;
 }
 
-.me:hover:before,
-.me:focus:before {
+.me:hover:before {
 	bottom: -11px;
 	left: -3px;
 	width: 106%;
@@ -148,13 +147,11 @@ nav:before {
 	transition: all 0.3s ease-in;
 }
 
-nav:hover,
-nav:focus {
+nav:hover {
 top: -10px;
 }
 
-nav:hover:before,
-nav:focus:before {
+nav:hover:before {
 	bottom: -11px;
 	left: -3px;
 	width: 106%;
