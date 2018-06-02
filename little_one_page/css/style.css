@@ -120,14 +120,14 @@ h3{
   font-weight: bolder;
 }
 
-img {
+.image img {
 	position: relative;
 	top: 0;
   box-shadow: 6px 6px 6px black;
 	transition: all 0.3s ease-in;
 }
 
-img:hover {
+.image img:hover {
 top: -35px;
 border-radius: 50%;
 box-shadow: 10px 10px 35px grey;
@@ -172,13 +172,13 @@ iframe{
 form{
   display: flex;
   flex-direction: column;
-  width: 450px;
-  height: 430px;
+  width: 480px;
+  height: 500px;
   margin-left: 50px;
 }
 .profil{
-  max-width: 450px;
-  max-height: 380px;
+  width: 450px;
+  height: 380px;
 }
 .button{
   height: 55px;
@@ -209,6 +209,72 @@ h2 .fa-id-card{
   vertical-align:sub;
 }
 
+.icone1{
+  border: 1px solid #a8a8a8;
+  width: 450px;
+  height: 55px;
+  color: #a8a8a8;
+  margin-bottom: 5px;
+}
+
+.text{
+  border:0;
+  width: 405px;
+  outline: none;
+}
+
+.icone2{
+  border: 1px solid #a8a8a8;
+  width: 450px;
+  height: 55px;
+  color: #a8a8a8;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.mail{
+  border:0;
+  width: 405px;
+  outline: none;
+}
+
+.icone3{
+  border: 1px solid #a8a8a8;
+  width: 450px;
+  height: 55px;
+  color: #a8a8a8;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.tel{
+  border:0;
+  width: 405px;
+  outline: none;
+}
+
+.icone4{
+  border: 1px solid #a8a8a8;
+  width: 450px;
+  height: 180px;
+  color: #a8a8a8;
+  margin-top: 5px;
+}
+
+.area{
+  border:0;
+  width: 405px;
+  margin-top: 5px;
+  outline: none;
+}
+.fa-comment{
+  top: -155px;
+  position: relative;
+}
+.fa-user,.fa-envelope,.fa-mobile-alt,.fa-comment{
+  padding: 10px;
+  font-size: 15px;
+}
 /*Footer\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 footer{
   width: 100%;
