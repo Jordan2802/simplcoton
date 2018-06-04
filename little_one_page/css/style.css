@@ -21,7 +21,7 @@ header{
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
-  height: 360px;
+  height: 300px;
   text-align: center;
 }
 /*animation h1////////////////////////////////////////////////////////////*/
@@ -31,7 +31,7 @@ header{
   margin-bottom: 20px;
 }
 
-/*//////////////////////////////////////////////////////////////////////////*/
+/*nav//////////////////////////////////////////////////////////////////////////*/
 .titre{
   height: 200px;
   padding-top:100px;
@@ -52,9 +52,8 @@ nav p:last-child a{
 }
 nav{
   background: linear-gradient(deepskyblue, dodgerblue);
-  height: 60px;
   width: 100%;
-  display: inline-flex;
+  display:flex;
   justify-content: center;
   border-radius: 3px;
   padding: 0 0 10px 0;
@@ -137,7 +136,7 @@ h3{
   color:  black;
   width: 50px;
   height: 50px;
-  margin-left:0;
+  margin:0;
   vertical-align:sub;
 }
 
@@ -149,7 +148,7 @@ h3{
   margin-bottom: 40px;
 }
 .st1, .st3{
-  width: 980px;
+  max-width: 980px;
   margin: auto;
 }
 .st4{
@@ -157,9 +156,12 @@ h3{
   width: 100%;
 }
 .st2 h2, .st2 p, .st4 h2{
-  width: 980px;
+  max-width: 980px;
   margin:auto;
   margin-bottom: 20px;
+}
+h2{
+  margin-top: 15px;
 }
 /*partie 1////////////////////////////////////////////////////////////////////*/
 .image img {
@@ -177,7 +179,7 @@ box-shadow: 10px 10px 35px grey;
 
 .image{
   display: flex;
-  justify-content:flex-start;
+/*  justify-content:flex-start;*/
   flex-wrap: wrap;
 }
 
@@ -193,7 +195,9 @@ iframe{
 /*partie 3///////////////////////////////////////////////////////////////////*/
 
 .imgform{
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 form{
@@ -218,6 +222,8 @@ textarea{
   margin-bottom: 15px;
   height: 165px;
   font-size: 1.6rem;
+  resize: none;
+  overflow: auto;
 }
 
 .button{
@@ -238,7 +244,7 @@ textarea{
   outline: none;
 }
 
-.icone1{
+.icone1,.icone2,.icone3{
   border: 1px solid #242323;
   width: 450px;
   height: 55px;
@@ -247,11 +253,6 @@ textarea{
 }
 
 .icone2,.icone3{
-  border: 1px solid #242323;
-  width: 450px;
-  height: 55px;
-  color: #242323;
-  margin-bottom: 5px;
   margin-top: 5px;
 }
 
@@ -279,7 +280,7 @@ textarea{
   outline: none;
 }
 .fa-comment{
-  top: -135px;
+  top: -125px;
   position: relative;
 }
 .fa-user,.fa-envelope,.fa-comment{
@@ -293,7 +294,7 @@ textarea{
 /*images animés\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 #cf2 {
   position:relative;
-  height:281px;
+  height:380px;
   width:450px;
   margin:0 auto;
 }
@@ -305,7 +306,40 @@ textarea{
   -o-transition: opacity 1.5s ease-in-out;
   transition: opacity 1.5s ease-in-out;
 }
-
+@media screen and (max-width:980px) {
+ #cf2{
+    max-width: 100%;
+    height: calc(85vw);
+  }
+  form{
+  width: 100%;
+  }
+.titre{
+  width: 100%;
+  padding: 0;
+}
+  nav{
+  display: flex;
+  flex-wrap: wrap;
+  }
+}
+@media  screen and (max-width:480px) {
+  #cf2{
+    width: 100%;
+    height: calc(85vw);
+  }
+  form{
+    max-width: 100%;
+  }
+.titre{
+  width: 100%;
+  padding: 0;
+}
+  nav{
+  display: flex;
+  flex-wrap: wrap;
+  }
+}
 #cf2 img.transparent {
 opacity:0;
 }
@@ -336,10 +370,11 @@ animation-direction: alternate;
 /*partie 4////////////////////////////////////////////////////////////////////*/
 #volet {
 	width: 250px;
-	padding: 10px;
+	padding: 5px;
 	background: linear-gradient(deepskyblue, dodgerblue);
   color: #fff;
   position: relative;
+  border: 2px solid white;
 	left: -270px; top: 55px;
   -webkit-transition: all .5s ease-in;
 	transition: all .5s ease-in;
@@ -350,14 +385,18 @@ animation-direction: alternate;
 }
 
 #volet a.ouvrir, #volet a.fermer {
-  padding: 10px 25px;
+  padding: 10px 15px;
   font-size: 2.2rem;
 	background: #555;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+
 	color: #fff;
 	text-decoration: none;
   position: absolute;
 	right: -88px;
-	top: 75px;
+	top: 50px;
 
 	/* quelques styles CSS3 */
 	-ms-transform: rotate(270deg);
@@ -397,16 +436,6 @@ span{
   margin-top: 50px;
 }
 
-/*nav.fixed{
-  position: fixed;
-  top: 0;
-  left: 50px;
-  right: 0;
-  width: 10%;
-  height: 140px;
-  flex-direction: column;
-  z-index:1000;
-}*/
 nav.fixed{
   position: fixed;
   top: 0;
