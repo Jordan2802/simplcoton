@@ -56,7 +56,6 @@ nav{
   display:flex;
   justify-content: center;
   border-radius: 3px;
-  padding: 0 0 10px 0;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
   box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
                 0 -1px 0 hsl(210, 100%, 32%) inset,
@@ -96,7 +95,6 @@ nav.fixed{
 nav p{
   height: 40px;
   display: block;
-  text-align: center;
   padding: 8px 8px 17px 8px;
   font-size: 2.2rem;
   color: rgba(0, 0, 0, .7);
@@ -188,12 +186,11 @@ box-shadow: 10px 10px 35px grey;
 
 .image{
   display: flex;
-/*  justify-content:flex-start;*/
   flex-wrap: wrap;
 }
 
 .img{
-  margin-right: 10px;
+  margin-right: 12px;
 }
 /*partie 2///////////////////////////////////////////////////////////////////*/
 iframe{
