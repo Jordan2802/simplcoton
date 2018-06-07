@@ -234,6 +234,7 @@ textarea{
   font-size: 1.6rem;
   resize: none;
   overflow: auto;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .button{
